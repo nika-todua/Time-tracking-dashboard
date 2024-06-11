@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <script src="./assets/js/script.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <article class="time-tracking-dashboard">
+        <div class="report-for">
+          <div class="person">
+            <picture>
+              <source media="(min-width: 1158px)" width="78" height="78" srcset="images/image-jeremy.png">
+              <img class="person-img" src="images/image-jeremy.png" width="64" height="64" alt="image of jeremy">
+            </picture>
+            <div class="name-description">
+              <p class="description">Report for</p>
+              <p class="name">Jeremy Robson</p>
+            </div>
+          </div>
+          <div class="time">
+            <button id="daily-btn" class="time-btn">Daily</button>
+            <button id="weekly-btn" class="time-btn active">Weekly</button>
+            <button id="monthly-btn" class="time-btn">Monthly</button>
+          </div>
+        </div>
+        <div class="card work">
+          <img class="icon-bg" src="images/icon-work.svg" alt="icon of work">
+          <div class="inner-content">
+            <div class="inner-header">
+              <p class="title">Work</p>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+            </div>
+            <div class="inner-body">
+              <p class="current"><span class="current-hours">32</span>hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours">36</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card play">
+          <img class="icon-bg" src="images/icon-play.svg" alt="icon of play">
+          <div class="inner-content">
+            <div class="inner-header">
+              <p class="title">Play</p>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+            </div>
+            <div class="inner-body">
+              <p class="current"><span class="current-hours">10</span>hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours">36</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card study">
+          <img class="icon-bg" src="images/icon-study.svg" alt="icon of study">
+          <div class="inner-content">
+            <div class="inner-header">
+              <p class="title">Study</p>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+            </div>
+            <div class="inner-body">
+              <p class="current"><span class="current-hours">4</span>hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours">7</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card exercise">
+          <img class="icon-bg" src="images/icon-exercise.svg" alt="icon of exercise">
+          <div class="inner-content">
+            <div class="inner-header">
+              <p class="title">Exercise</p>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+            </div>
+            <div class="inner-body">
+              <p class="current"><span class="current-hours">4</span>hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours">5</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card social">
+          <img class="icon-bg" src="images/icon-social.svg" alt="icon of social">
+          <div class="inner-content">
+            <div class="inner-header">
+              <p class="title">Social</p>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+            </div>
+            <div class="inner-body">
+              <p class="current"><span class="current-hours">5</span>hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours">10</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card self-care">
+          <img class="icon-bg" src="images/icon-self-care.svg" alt="icon of self-care">
+          <div class="inner-content">
+            <div class="inner-header">
+              <p class="title">Self Care</p>
+              <button class="card-btn">
+                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+              </button>
+            </div>
+            <div class="inner-body">
+              <p class="current"><span class="current-hours">2</span>hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours">2</span>hrs</p>
+            </div>
+          </div>
+        </div>
+    </article>
+  </main>
+</body>
+</html>
